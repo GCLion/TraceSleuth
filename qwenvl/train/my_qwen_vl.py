@@ -1,0 +1,276 @@
+from transformers import (
+    TrainingArguments,
+    Trainer,
+    DataCollatorForSeq2Seq,
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    AutoProcessor,
+    Qwen2_5_VLForConditionalGeneration,
+)
+from transformers.models.qwen2_5_vl.modeling_qwen2_5_vl import Qwen2_5_VLCausalLMOutputWithPast
+import numpy as np
+import torch
+from torch.utils.data import Dataset
+from PIL import Image
+# from decord import VideoReader
+import transformers
+from qwen_vl_utils import process_vision_info
+from typing import Any, Callable, Dict, List, Optional, Set, Tuple, Type, TypeVar, Union
+import torch.nn as nn
+from torch.nn import CrossEntropyLoss
+import math
+from dataclasses import dataclass
+from typing import Any, Dict, List, Optional, Tuple, Union
+import torch.nn.functional as F
+
+# @dataclass
+# class Qwen2_5_VLCausalLMOutputWithPast(ModelOutput):
+#     """
+#     Base class for Qwen2_5_VL causal language model (or autoregressive) outputs.
+
+#     Args:
+#         loss (`torch.FloatTensor` of shape `(1,)`, *optional*, returned when `labels` is provided):
+#             Language modeling loss (for next-token prediction).
+#         logits (`torch.FloatTensor` of shape `(batch_size, sequence_length, config.vocab_size)`):
+#             Prediction scores of the language modeling head (scores for each vocabulary token before SoftMax).
+#         past_key_values (`tuple(tuple(torch.FloatTensor))`, *optional*, returned when `use_cache=True` is passed or when `config.use_cache=True`):
+#             Tuple of `tuple(torch.FloatTensor)` of length `config.n_layers`, with each tuple having 2 tensors of shape
+#             `(batch_size, num_heads, sequence_length, embed_size_per_head)`)
+
+#             Contains pre-computed hidden-states (key and values in the self-attention blocks) that can be used (see
+#             `past_key_values` input) to speed up sequential decoding.
+#         hidden_states (`tuple(torch.FloatTensor)`, *optional*, returned when `output_hidden_states=True` is passed or when `config.output_hidden_states=True`):
+#             Tuple of `torch.FloatTensor` (one for the output of the embeddings, if the model has an embedding layer, +
+#             one for the output of each layer) of shape `(batch_size, sequence_length, hidden_size)`.
+
+#             Hidden-states of the model at the output of each layer plus the optional initial embedding outputs.
+#         attentions (`tuple(torch.FloatTensor)`, *optional*, returned when `output_attentions=True` is passed or when `config.output_attentions=True`):
+#             Tuple of `torch.FloatTensor` (one for each layer) of shape `(batch_size, num_heads, sequence_length,
+#             sequence_length)`.
+
+#             Attentions weights after the attention softmax, used to compute the weighted average in the self-attention
+#             heads.
+#         rope_deltas (`torch.LongTensor` of shape `(batch_size, )`, *optional*):
+#             The rope index difference between sequence length and multimodal rope.
+#     """
+
+#     loss: Optional[torch.FloatTensor] = None
+#     logits: torch.FloatTensor = None
+#     past_key_values: Optional[List[torch.FloatTensor]] = None
+#     hidden_states: Optional[Tuple[torch.FloatTensor]] = None
+#     attentions: Optional[Tuple[torch.FloatTensor]] = None
+#     rope_deltas: Optional[torch.LongTensor] = None
+
+class FeatureForgeryEncoder(nn.Module):
+    """
+    输入: feat_vis [N_patches, D_vis]
+    输出: feat_forg [N_patches, D_forg]
+    在 ViT 特征空间里提取“伪造风格特征”，保证 patch 数绝对一致
+    """
+    def __init__(self, dim_vis, dim_forg=256):
+        super().__init__()
+        self.mlp = nn.Sequential(
+            nn.Linear(dim_vis, dim_vis),
+            nn.ReLU(inplace=True),
+            nn.Linear(dim_vis, dim_forg),
+            nn.ReLU(inplace=True),
+        )
+
+    def forward(self, feat_vis):
+        return self.mlp(feat_vis)  # [N_patches, dim_forg]
+
+class ForgeryAdapter(nn.Module):
+    def __init__(self, dim_vis, dim_forg, hidden_dim=None):
+        super().__init__()
+        self.dim_vis = dim_vis
+        self.dim_forg = dim_forg
+        self.hidden_dim = hidden_dim or dim_vis
+
+        self.proj_forg = nn.Linear(dim_forg, dim_vis)
+        self.weight_gate = nn.Parameter(torch.zeros(dim_vis))
+        if self.hidden_dim != dim_vis:
+            self.fuse_proj = nn.Linear(dim_vis, self.hidden_dim)
+        else:
+            self.fuse_proj = nn.Identity()
+        self.norm = nn.LayerNorm(self.hidden_dim)
+
+    def forward(self, feat_vis, feat_forg):
+        """
+        feat_vis: [N, dim_vis]
+        feat_forg: [N, dim_forg]
+        """
+        assert feat_vis.shape[0] == feat_forg.shape[0], \
+            f"patch数不一致: vis={feat_vis.shape[0]}, forg={feat_forg.shape[0]}"
+
+        forg_proj = self.proj_forg(feat_forg)  # [N, dim_vis]
+        alpha = torch.sigmoid(self.weight_gate)  # [dim_vis]
+        fused = feat_vis + alpha * forg_proj     # [N, dim_vis]
+        out = self.fuse_proj(fused)
+        out = self.norm(out)
+        return out  # [N, hidden_dim]
+
+class My_Qwen2_5_VL(Qwen2_5_VLForConditionalGeneration):
+    def __init__(self, config):
+        super().__init__(config)
+        dim_vis = self.visual.config.out_hidden_size
+        forg_dim = 256
+        self.forgery_encoder = FeatureForgeryEncoder(dim_vis=dim_vis, dim_forg=forg_dim)
+        self.adapter = ForgeryAdapter(dim_vis=dim_vis, dim_forg=forg_dim, hidden_dim=dim_vis)
+        
+        # Initialize weights and apply final processing
+        self.post_init()
+    
+    def load_state_dict(self, state_dict, strict=False):
+        # 总是设置strict=False
+        return super().load_state_dict(state_dict, strict=False)
+
+    def forward(
+        self,
+        input_ids: torch.LongTensor = None,
+        attention_mask: Optional[torch.Tensor] = None,
+        position_ids: Optional[torch.LongTensor] = None,
+        past_key_values: Optional[List[torch.FloatTensor]] = None,
+        inputs_embeds: Optional[torch.FloatTensor] = None,
+        labels: Optional[torch.LongTensor] = None,
+        use_cache: Optional[bool] = None,
+        output_attentions: Optional[bool] = None,
+        output_hidden_states: Optional[bool] = None,
+        return_dict: Optional[bool] = None,
+        pixel_values: Optional[torch.Tensor] = None,
+        pixel_values_videos: Optional[torch.FloatTensor] = None,
+        image_grid_thw: Optional[torch.LongTensor] = None,
+        video_grid_thw: Optional[torch.LongTensor] = None,
+        rope_deltas: Optional[torch.LongTensor] = None,
+        cache_position: Optional[torch.LongTensor] = None,
+        second_per_grid_ts: Optional[torch.Tensor] = None,
+    ):
+        
+
+        output_attentions = output_attentions if output_attentions is not None else self.config.output_attentions
+        output_hidden_states = (
+            output_hidden_states if output_hidden_states is not None else self.config.output_hidden_states
+        )
+        return_dict = return_dict if return_dict is not None else self.config.use_return_dict
+
+        if inputs_embeds is None:
+            inputs_embeds = self.model.embed_tokens(input_ids)
+            if pixel_values is not None:
+                pixel_values = pixel_values.type(self.visual.dtype)
+                image_embeds = self.visual(pixel_values, grid_thw=image_grid_thw)
+                # feat_vis = self.visual(pixel_values, grid_thw=image_grid_thw)  # [N_total_patches, dim_vis]
+                ####
+                feat_forg = self.forgery_encoder(image_embeds)                         # [N_total_patches, forg_dim]
+                # 3) Adapter 融合 → C
+                image_embeds = self.adapter(image_embeds, feat_forg) 
+                ####
+
+                n_image_tokens = (input_ids == self.config.image_token_id).sum().item()
+                n_image_features = image_embeds.shape[0]
+                if n_image_tokens != n_image_features:
+                    raise ValueError(
+                        f"Image features and image tokens do not match: tokens: {n_image_tokens}, features {n_image_features}"
+                    )
+
+                mask = input_ids == self.config.image_token_id
+                mask_unsqueezed = mask.unsqueeze(-1)
+                mask_expanded = mask_unsqueezed.expand_as(inputs_embeds)
+                image_mask = mask_expanded.to(inputs_embeds.device)
+
+                image_embeds = image_embeds.to(inputs_embeds.device, inputs_embeds.dtype)
+                inputs_embeds = inputs_embeds.masked_scatter(image_mask, image_embeds)
+
+            if pixel_values_videos is not None:
+                pixel_values_videos = pixel_values_videos.type(self.visual.dtype)
+                video_embeds = self.visual(pixel_values_videos, grid_thw=video_grid_thw)
+                n_video_tokens = (input_ids == self.config.video_token_id).sum().item()
+                n_video_features = video_embeds.shape[0]
+                if n_video_tokens != n_video_features:
+                    raise ValueError(
+                        f"Video features and video tokens do not match: tokens: {n_video_tokens}, features {n_video_features}"
+                    )
+
+                mask = input_ids == self.config.video_token_id
+                mask_unsqueezed = mask.unsqueeze(-1)
+                mask_expanded = mask_unsqueezed.expand_as(inputs_embeds)
+                video_mask = mask_expanded.to(inputs_embeds.device)
+
+                video_embeds = video_embeds.to(inputs_embeds.device, inputs_embeds.dtype)
+                inputs_embeds = inputs_embeds.masked_scatter(video_mask, video_embeds)
+
+            if attention_mask is not None:
+                attention_mask = attention_mask.to(inputs_embeds.device)
+
+        # if we get 4D attention mask we cannot calculate rope deltas anymore. TODO @raushan fixme
+        if position_ids is None and (attention_mask is None or attention_mask.ndim == 2):
+            # calculate RoPE index once per generation in the pre-fill stage only
+            if (
+                (cache_position is not None and cache_position[0] == 0)
+                or self.rope_deltas is None
+                or (past_key_values is None or past_key_values.get_seq_length() == 0)
+            ):
+                position_ids, rope_deltas = self.get_rope_index(
+                    input_ids,
+                    image_grid_thw,
+                    video_grid_thw,
+                    second_per_grid_ts,
+                    attention_mask,
+                )
+                self.rope_deltas = rope_deltas
+            # then use the prev pre-calculated rope-deltas to get the correct position ids
+            else:
+                batch_size, seq_length, _ = inputs_embeds.shape
+                delta = (
+                    (cache_position[0] + self.rope_deltas).to(inputs_embeds.device)
+                    if cache_position is not None
+                    else 0
+                )
+                position_ids = torch.arange(seq_length, device=inputs_embeds.device)
+                position_ids = position_ids.view(1, -1).expand(batch_size, -1)
+                if cache_position is not None:  # otherwise `deltas` is an int `0`
+                    delta = delta.repeat_interleave(batch_size // delta.shape[0], dim=0)
+                position_ids = position_ids.add(delta)
+                position_ids = position_ids.unsqueeze(0).expand(3, -1, -1)
+
+        outputs = self.model(
+            input_ids=None,
+            position_ids=position_ids,
+            attention_mask=attention_mask,
+            past_key_values=past_key_values,
+            inputs_embeds=inputs_embeds,
+            use_cache=use_cache,
+            output_attentions=output_attentions,
+            output_hidden_states=output_hidden_states,
+            return_dict=return_dict,
+            cache_position=cache_position,
+        )
+
+        hidden_states = outputs[0]
+        logits = self.lm_head(hidden_states)
+
+        loss = None
+        if labels is not None:
+            # Upcast to float if we need to compute the loss to avoid potential precision issues
+            logits = logits.float()
+            # Shift so that tokens < n predict n
+            shift_logits = logits[..., :-1, :].contiguous()
+            shift_labels = labels[..., 1:].contiguous()
+            # Flatten the tokens
+            loss_fct = CrossEntropyLoss()
+            shift_logits = shift_logits.view(-1, self.config.vocab_size)
+            shift_labels = shift_labels.view(-1)
+            # Enable model parallelism
+            shift_labels = shift_labels.to(shift_logits.device)
+            loss = loss_fct(shift_logits, shift_labels)
+
+        if not return_dict:
+            output = (logits,) + outputs[1:]
+            return (loss,) + output if loss is not None else output
+
+        return Qwen2_5_VLCausalLMOutputWithPast(
+            loss=loss,
+            logits=logits,
+            past_key_values=outputs.past_key_values,
+            hidden_states=outputs.hidden_states,
+            attentions=outputs.attentions,
+            rope_deltas=self.rope_deltas,
+        )

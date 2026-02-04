@@ -1,0 +1,17 @@
+{"time":"2026-01-01T02:57:23.209731741Z","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2026-01-01T02:57:23.209929531Z","level":"INFO","msg":"created symlink","path":"/train/myModel/VLM-R3-main/qwen_vl_finetune/wandb/run-20260101_025723-p0dvwxbl/logs/debug-core.log"}
+{"time":"2026-01-01T02:57:23.225136209Z","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2026-01-01T02:57:23.241550023Z","level":"INFO","msg":"created new stream","id":"p0dvwxbl"}
+{"time":"2026-01-01T02:57:23.241715128Z","level":"INFO","msg":"stream: started","id":"p0dvwxbl"}
+{"time":"2026-01-01T02:57:23.241739433Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"p0dvwxbl"}}
+{"time":"2026-01-01T02:57:23.241775192Z","level":"INFO","msg":"handler: started","stream_id":{"value":"p0dvwxbl"}}
+{"time":"2026-01-01T02:57:23.241820449Z","level":"INFO","msg":"sender: started","stream_id":{"value":"p0dvwxbl"}}
+{"time":"2026-01-01T02:57:53.245675011Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-01-01T02:58:25.739441555Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-01-01T02:58:55.264204336Z","level":"INFO","msg":"stream: closing","id":"p0dvwxbl"}
+{"time":"2026-01-01T02:58:55.264480628Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"p0dvwxbl"}}
+{"time":"2026-01-01T02:58:55.264667523Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"p0dvwxbl"}}
+{"time":"2026-01-01T02:58:55.26497231Z","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2026-01-01T02:58:55.265242735Z","level":"ERROR","msg":"runwork: ignoring record after close","work":{"Record":{"RecordType":{"Request":{"RequestType":{"Defer":{}}}},"control":{"always_send":true}}}}
+{"time":"2026-01-01T02:58:55.27135217Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"p0dvwxbl"}}
+{"time":"2026-01-01T02:58:55.271552475Z","level":"INFO","msg":"stream: closed","id":"p0dvwxbl"}

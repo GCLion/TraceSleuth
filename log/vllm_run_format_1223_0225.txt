@@ -1,0 +1,910 @@
+------------- 23-06-23-54-656576 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 58, 26], "bbox_2d": [90, 80, 123, 104], "bbox_2d": [211, 113, 248, 137], "bbox_2d": [289, 85, 336, 109], "answer": "Real"} </think>
+
+------------- 23-06-25-59-727107 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 96, 27, 118], "bbox_2d": [453, 138, 472, 156]} </think> 
+<answer> Real </answer> 
+<Real>
+
+------------- 23-06-25-59-754789 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [194, 71, 258, 123], "bbox_2d": [257, 106, 304, 145]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [415, 42, 451, 72], "bbox_2d": [385, 88, 417, 119]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [194, 140, 229, 169], "bbox_2d": [251, 96, 284, 119]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [372, 214, 396, 235], "bbox_2d": [189, 154, 216, 170]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [138, 166, 166, 184], "bbox_2d": [379, 188, 415, 218]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [223, 113, 258, 141], "bbox_2d": [165, 165, 203, 185]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [139, 196, 168, 210], "bbox_2d": [307, 100, 346, 141]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [249, 100, 284, 117], "bbox_2d": [365, 127, 396, 145]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [135, 216, 158, 231], "bbox_2d": [398, 227, 436, 253]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [204, 179, 233, 196], "bbox_2d": [343, 129, 367, 144]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [168, 190, 202, 216], "bbox_2d": [396, 239, 419, 254]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [166, 212, 201, 232], "bbox_2d": [225, 169, 256, 186]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [145, 206, 168, 219], "bbox_2d": [326, 118, 361, 141]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [158, 202, 185, 222], "bbox_2d": [264, 117, 315, 137]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [149, 211, 173, 226], "bbox_2d": [311, 105, 343, 136]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [121, 200, 159, 213], "bbox_2d": [313, 123, 349, 147]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [185, 151, 214, 169], "bbox_2d": [380, 99, 408, 116]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [155, 198, 194, 213], "bbox_2d": [354, 108, 379, 135]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [141, 205, 166, 219], "bbox_2d": [346, 99, 379, 128]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [143, 197, 169, 216], "bbox_2d": [344, 106, 380, 131]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [159, 190, 196, 210], "bbox_2d": [312, 137, 348, 161]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [332, 108, 363, 129], "bbox_2d": [363, 109, 399, 125]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [168, 167, 194, 184], "bbox_2d": [296, 96, 336, 123]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [288, 124, 328, 147], "bbox_2d": [344, 108, 375, 131]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [322, 97, 360, 121], "bbox_2d": [384, 100, 424, 130]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [309, 101, 357, 128], "bbox_2d": [288, 130, 321, 144]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [308, 106, 358, 129], "bbox_2d": [296, 127, 334, 146]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [337, 107, 368, 133], "bbox_2d": [258, 110, 292, 134]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [257, 135, 281, 160], "bbox_2d": [312, 103, 343, 126]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [166, 156, 196, 186], "bbox_2d": [258, 118, 285, 138]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [185, 176, 215, 191], "bbox_2d": [295, 107, 3
+
+------------- 23-06-28-54-102758 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [143, 81, 169, 105], "bbox_2d": [202, 76, 215, 99]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [198, 124, 214, 148], "bbox_2d": [70, 86, 79, 102]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [190, 25, 246, 105], "bbox_2d": [84, 77, 93, 96]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [17, 140, 37, 159], "bbox_2d": [152, 138, 166, 164]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [238, 108, 259, 143], "bbox_2d": [186, 210, 200, 223]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [17, 189, 32, 206], "bbox_2d": [85, 78, 93, 90]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [89, 210, 102, 224], "bbox_2d": [97, 94, 111, 109]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [81, 71, 93, 88], "bbox_2d": [183, 66, 196, 80]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [151, 239, 168, 254], "bbox_2d": [98, 143, 111, 157]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [280, 125, 290, 137], "bbox_2d": [93, 129, 102, 139]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [148, 28, 173, 38], "bbox_2d": [183, 105, 199, 124]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [150, 238, 162, 250], "bbox_2d": [83, 89, 93, 100]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [52, 78, 61, 96], "bbox_2d": [77, 186, 86, 198]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [220, 34, 233, 49], "bbox_2d": [179, 99, 193, 115]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [196, 128, 208, 142], "bbox_2d": [196, 195, 227, 216]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [157, 179, 171, 195], "bbox_2d": [66, 203, 79, 212]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [91, 196, 108, 211], "bbox_2d": [192, 149, 204, 167]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [138, 88, 157, 105], "bbox_2d": [158, 230, 167, 242]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [157, 88, 172, 104], "bbox_2d": [97, 146, 112, 159]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [87, 180, 93, 187], "bbox_2d": [221, 190, 230, 199]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [99, 98, 114, 114], "bbox_2d": [198, 101, 212, 113]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [24, 199, 36, 211], "bbox_2d": [220, 207, 240, 224]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [184, 185, 197, 192], "bbox_2d": [79, 184, 91, 192]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [196, 224, 209, 235], "bbox_2d": [220, 214, 237, 229]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [86, 129, 101, 138], "bbox_2d": [77, 108, 86, 119]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [98, 129, 106, 142], "bbox_2d": [193, 218, 207, 229]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [153, 188, 167, 205], "bbox_2d": [210, 199, 225, 212]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [79, 78, 86, 88], "bbox_2d": [96, 158, 105, 165]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [82, 185, 88, 192], "bbox_2d": [217, 175, 228, 183]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [150, 103, 164, 116], "bbox_2d": [155, 170, 168, 180]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [58, 198, 73, 209], "bbox_2d": [167, 213, 178, 224]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [220, 83, 242, 99], "bbox_2d": [169, 170
+
+------------- 23-06-28-54-125141 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 96, 58, 133], "bbox_2d": [300, 162, 323, 192]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 171, 39, 207], "bbox_2d": [88, 140, 169, 205]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [209, 96, 245, 139], "bbox_2d": [234, 127, 259, 163]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [214, 177, 234, 196], "bbox_2d": [129, 43, 158, 59]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 28, 89, 72], "bbox_2d": [193, 50, 209, 62]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [11, 107, 43, 188], "bbox_2d": [295, 137, 314, 156]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [347, 90, 360, 97], "bbox_2d": [231, 83, 268, 103]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 158, 14, 189], "bbox_2d": [279, 161, 302, 182]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [1, 179, 19, 219], "bbox_2d": [90, 170, 126, 196]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [1, 87, 42, 99], "bbox_2d": [282, 170, 305, 190]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [48, 113, 89, 212], "bbox_2d": [158, 151, 180, 165]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [164, 10, 258, 89], "bbox_2d": [248, 190, 270, 211]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [1, 207, 40, 259], "bbox_2d": [178, 193, 217, 221]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [301, 105, 340, 131], "bbox_2d": [324, 88, 348, 109]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [17, 132, 28, 160], "bbox_2d": [97, 90, 112, 116]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [104, 123, 137, 150], "bbox_2d": [334, 8, 355, 59]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 68, 16, 85], "bbox_2d": [7, 169, 37, 195]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [99, 200, 204, 244], "bbox_2d": [190, 136, 206, 155]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [49, 76, 74, 96], "bbox_2d": [56, 89, 100, 116]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [317, 96, 354, 121], "bbox_2d": [93, 218, 119, 232]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [12, 34, 19, 43], "bbox_2d": [297, 191, 308, 202]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [347, 56, 363, 64], "bbox_2d": [189, 57, 211, 74]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [217, 171, 230, 186], "bbox_2d": [275, 137, 293, 167]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [244, 89, 267, 106], "bbox_2d": [319, 119, 329, 139]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [18, 46, 31, 59], "bbox_2d": [107, 100, 132, 116]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [36, 28, 72, 52], "bbox_2d": [72, 114, 108, 136]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [231, 148, 268, 175], "bbox_2d": [261, 69, 283, 85]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [303, 99, 327, 129], "bbox_2d": [358, 43, 364, 59]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [120, 128, 139, 152], "bbox_2d": [287, 108, 312, 135]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [183, 148, 196, 185], "bbox_2d": [267, 90, 298, 118]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 105, 16, 124], "bbox_2d": [228, 90, 246, 110]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [43, 170, 69, 196], "bbox_2d": [346, 53, 361, 64]} </think> 
+<answer> Real </answer> 
+<think>
+
+------------- 23-06-30-21-305966 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 23, 35], "bbox_2d": [94, 162, 112, 182]} </think> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer>
+
+------------- 23-06-30-37-680301 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 63, 47], "bbox_2d": [144, 18, 194, 32]} </think> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer>
+
+------------- 23-06-31-39-047278 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 25, 34], "bbox_2d": [289, 96, 313, 133]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/xzH7v.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [0, 269, 19, 277], "bbox_2d": [176, 225, 193, 237]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/2N1ZT.jpeg"/> </image> 
+<answer> </answer> 
+</image> 
+<think> {"bbox_2d": [54, 96, 75, 124], "bbox_2d": [79, 177, 95, 195]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/AyL4V.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [63, 89, 85, 107], "bbox_2d": [114, 139, 135, 165]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/hlNcP.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [143, 87, 167, 105], "bbox_2d": [153, 162, 169, 178]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/vjW2B.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [188, 187, 210, 207], "bbox_2d": [308, 189, 320, 208]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/3Yx9s.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [213, 150, 230, 160], "bbox_2d": [234, 193, 253, 205]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/aMkzR.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [109, 96, 133, 110], "bbox_2d": [254, 157, 269, 173]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/f1oVg.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [127, 95, 145, 114], "bbox_2d": [215, 173, 231, 192]} </think> 
+<answer> Real </answer> 
+<image> <img src="https://hikr.nu/api/f1QHn.jpeg"/> </image> 
+<answer> </answer> 
+<think> {"bbox_2d": [88, 99, 112, 116], "bbox_2d": [302, 159, 321, 178]} </think> 
+<answer> Real </answer> 
+<image> <img
+
+------------- 23-06-31-55-523240 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 96, 38, 145], "bbox_2d": [179, 119, 203, 148]} </think> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real </answer> 
+<answer> </answer> 
+<answer> Real
+
+------------- 23-06-32-55-370239 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 25, 35], "bbox_2d": [498, 283, 533, 305]} </think> 
+<answer> Real </answer> 
+<Real> </Real> 
+<Real> </Real> 
+<Real> </Real> 
+<Real> </Real> 
+<answer> Real </answer> 
+图片展示了一只真实的蓝鸟，栖息在树枝上。图中没有任何明显的被修改或伪造的痕迹。{"bbox_2d": [239, 109, 275, 142], "bbox_2d": [286, 145, 329, 168]}
+
+------------- 23-06-32-55-391265 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 35, 40], "bbox_2d": [184, 272, 261, 302]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [315, 117, 330, 131], "bbox_2d": [495, 288, 518, 302]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [146, 90, 184, 99], "bbox_2d": [379, 196, 394, 201]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [349, 149, 375, 171], "bbox_2d": [343, 170, 365, 195]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [464, 195, 487, 204], "bbox_2d": [273, 93, 285, 102]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [215, 112, 229, 119], "bbox_2d": [429, 259, 442, 266]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [289, 66, 311, 71], "bbox_2d": [275, 34, 286, 38]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [343, 197, 337, 206], "bbox_2d": [423, 178, 443, 189]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [279, 122, 292, 129], "bbox_2d": [460, 223, 473, 232]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [215, 189, 229, 197], "bbox_2d": [310, 271, 322, 278]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [94, 166, 105, 181], "bbox_2d": [459, 266, 474, 276]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [398, 182, 412, 187], "bbox_2d": [464, 288, 478, 298]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [395, 176, 407, 180], "bbox_2d": [465, 289, 478, 299]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [429, 203, 442, 209], "bbox_2d": [395, 175, 407, 180]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [444, 191, 457, 199], "bbox_2d": [460, 234, 473, 241]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [418, 205, 432, 215], "bbox_2d": [350, 134, 354, 139]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [389, 149, 402, 155], "bbox_2d": [330, 146, 340, 152]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [253, 118, 264, 126], "bbox_2d": [325, 134, 335, 141]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [352, 135, 359, 140], "bbox_2d": [347, 138, 356, 145]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [390, 150, 394, 154], "bbox_2d": [457, 268, 472, 272]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [398, 185, 411, 196], "bbox_2d": [375, 157, 391, 167]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [493, 190, 506, 199], "bbox_2d": [368, 198, 381, 207]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [371, 168, 382, 175], "bbox_2d": [367, 168, 382, 175]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [334, 139, 343, 145], "bbox_2d": [460, 239, 472, 246]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [347, 117, 362, 124], "bbox_2d": [370, 157, 381, 166]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2
+
+------------- 23-06-34-52-907035 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 28, 35], "bbox_2d": [94, 176, 167, 216]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 0, 42, 27], "bbox_2d": [184, 137, 235, 158]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 212, 38, 233], "bbox_2d": [217, 108, 258, 141]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 225, 45, 251], "bbox_2d": [159, 189, 197, 209]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [114, 65, 151, 79], "bbox_2d": [175, 137, 211, 150]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [173, 83, 204, 102], "bbox_2d": [248, 198, 278, 217]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [133, 62, 172, 80], "bbox_2d": [85, 178, 138, 197]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 105, 55, 129], "bbox_2d": [90, 89, 117, 101]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [185, 216, 205, 249], "bbox_2d": [238, 111, 279, 135]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 248, 36, 277], "bbox_2d": [219, 188, 256, 216]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [69, 206, 96, 226], "bbox_2d": [101, 201, 131, 226]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [84, 234, 99, 246], "bbox_2d": [123, 196, 139, 210]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [58, 206, 82, 225], "bbox_2d": [115, 226, 143, 242]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 62, 26, 79], "bbox_2d": [131, 87, 160, 105]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 0, 40, 15], "bbox_2d": [82, 76, 110, 86]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [70, 98, 91, 109], "bbox_2d": [283, 168, 324, 190]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [53, 237, 67, 261], "bbox_2d": [109, 167, 138, 181]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [189, 213, 205, 224], "bbox_2d": [193, 244, 220, 257]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 190, 33, 207], "bbox_2d": [39, 62, 66, 81]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [62, 84, 95, 95], "bbox_2d": [119, 62, 156, 76]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [65, 209, 105, 238], "bbox_2d": [148, 164, 165, 178]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [44, 236, 62, 256], "bbox_2d": [83, 76, 104, 92]} </think> 
+<answer> Real
+
+------------- 23-06-34-52-969687 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 29, 35], "bbox_2d": [184, 122, 207, 144]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [64, 57, 85, 77], "bbox_2d": [139, yin, yin + yin]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 0, 22, 19], "bbox_2d": [129, 210, 148, 234]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 170, 34, 190], "bbox_2d": [253, 154, 273, 174]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [20, 95, 35, 113], "bbox_2d": [225, 76, 238, 93]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [2, 219, 27, 239], "bbox_2d": [170, 175, 195, 195]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [78, 98, 94, 120], "bbox_2d": [66, 117, 89, 141]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [44, 90, 56, 107], "bbox_2d": [221, 163, 241, 177]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [36, 84, 52, 97], "bbox_2d": [180, 95, 195, 111]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [81, 181, 135, 194], "bbox_2d": [277, 110, 315, 130]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [76, 211, 132, 227], "bbox_2d": [194, 189, 228, 205]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [286, 168, 304, 184], "bbox_2d": [162, 196, 186, 216]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [109, 96, 129, 108], "bbox_2d": [309, 58, 326, 74]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [32, 96, 42, 107], "bbox_2d": [181, 160, 205, 175]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [88, 74, 98, 92], "bbox_2d": [313, 62, 329, 78]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [40, 172, 55, 184], "bbox_2d": [144, 214, 168, 227]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [73, 232, 91, 251], "bbox_2d": [265, 198, 286, 218]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [15, 107, 30, 125], "bbox_2d": [91, 177, 114, 198]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [85, 200, 105, 220], "bbox_2d": [284, 154, 302, 173]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [60, 106, 72, 120], "bbox_2d": [145, 175, 179, 194]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [112, 201, 129, 219], "bbox_2d": [145, 158, 174, 167]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [10, 81, 19, 95], "bbox_2d": [256, 83, 282, 97]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [39, 94, 55, 105], "bbox_2d": [191, 149, 214, 160]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [71, 221, 87, 231], "bbox_2d": [126, 190, 148, 203]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [189, 108, 209, 124], "bbox_2d": [210, 36, 224, 56]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [310, 105, 325, 117], "bbox_2d": [99, 186, 120, 209]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [277, 75, 289, 87], "bbox_2d": [330, 94, 351, 115]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [33,
+
+------------- 23-06-35-39-624742 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": [0, 0, 28, 35], "bbox_2d": [94, 176, 112, 195]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [0, 201, 40, 222], "bbox_2d": [190, 235, 213, 254]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [294, 158, 313, 179], "bbox_2d": [36, 73, 59, 93]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [152, 139, 170, 153], "bbox_2d": [59, 223, 84, 240]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [165, 164, 189, 177], "bbox_2d": [290, 195, 316, 212]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [122, 186, 147, 207], "bbox_2d": [193, 199, 213, 215]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [220, 169, 240, 186], "bbox_2d": [263, 164, 284, 180]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [276, 90, 301, 103], "bbox_2d": [71, 81, 90, 93]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [179, 145, 196, 155], "bbox_2d": [143, 135, 159, 147]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [219, 113, 242, 129], "bbox_2d": [278, 151, 300, 164]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [195, 129, 216, 146], "bbox_2d": [89, 182, 106, 196]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [258, 104, 274, 121], "bbox_2d": [236, 166, 252, 176]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [134, 97, 162, 115], "bbox_2d": [3, 70, 20, 85]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [287, 109, 301, 120], "bbox_2d": [28, 129, 48, 147]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [184, 179, 204, 198], "bbox_2d": [94, 197, 111, 209]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [289, 182, 304, 197], "bbox_2d": [45, 94, 65, 106]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [210, 77, 230, 91], "bbox_2d": [108, 180, 133, 198]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [155, 95, 173, 110], "bbox_2d": [72, 195, 90, 212]} </think> 
+<answer> Real </answer> 
+<think> {"bbox_2d": [159, 141, 176, 152], "bbox_2d": [121, 165, 137, 177]} </think> 
+<answer> Real
+
+------------- 23-07-00-06-059407 Format reward: 0.0 -------------
+Content: <think> {"bbox_2d": 1, "bbox_2d": 2} </think> 
+<answer> Real </answer> 
+
+ addCriterion
+{"bbox
+ addCriterion
+{"bbox
+
+------------- 23-07-49-02-785596 Format reward: 0.0 -------------
+Content: <think">{"bbox_2d": [0], "bbox_2d": [35], "bbox_2d": [61]}</thearn> 
+</div> 
+<thearc>Real</thearn> 
+</div> 
+
+

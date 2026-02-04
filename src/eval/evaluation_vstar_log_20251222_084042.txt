@@ -1,0 +1,9 @@
+
+----- Evaluation Start at 2025-12-22 08:40:42 -----
+model_path: /train/myModel/VLM-R3-main/qwen_vl_finetune/output_sft
+Valid samples: 78
+ACC: 0.3846
+F1: 0.2778
+Precision: 0.2356
+Recall: 0.3477
+--------------------------------------------------
