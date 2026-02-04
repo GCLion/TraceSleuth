@@ -26,10 +26,10 @@ bash sft_7b.sh
 
 ## Main Result
 
-<img src="D:\Document\Git\TraceSleuth\image\image-20260204142459483.png" alt="image-20260204142459483" style="zoom:50%;" />
+<img src="./image/image-20260204142459483.png" alt="image-20260204142459483" style="zoom:50%;" />
 
-<img src="D:\Document\Git\TraceSleuth\image\image-20260204142523139.png" alt="image-20260204142523139" style="zoom:50%;" />
+<img src="./image/image-20260204142523139.png" alt="image-20260204142523139" style="zoom:50%;" />
 
-<img src="D:\Document\Git\TraceSleuth\image\image-20260204142549687.png" alt="image-20260204142549687" style="zoom:50%;" />
+<img src="./image/image-20260204142549687.png" alt="image-20260204142549687" style="zoom:50%;" />
 
-<img src="D:\Document\Git\TraceSleuth\image\image-20260204142616389.png" alt="image-20260204142616389" style="zoom: 80%;" />
+<img src="./image/image-20260204142616389.png" alt="image-20260204142616389" style="zoom: 80%;" />
