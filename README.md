@@ -6,7 +6,7 @@ The rapid advancement of generative AI has significantly reduced the cost of con
 
 To address these limitations, we propose **TraceSleuth**, a coarse-to-fine, three-stage, evidence-driven reasoning framework for joint forgery detection and explanation. TraceSleuth first performs global recognition to establish a testable hypothesis space, then amplifies local forensic traces through frequency-domain enhancement and integrates them with high-level semantic features via evidence-gated fusion. Finally, an LLM is constrained by the accumulated evidence to generate pixel-level localization and faithful rationales, reducing misalignment between textual explanations and visual cues.
 
-![image-20260204135919273](./image/image-20260204135919273.png)
+![image-20260403171906092](D:\Document\Git\TraceSleuth\image\image-20260403171906092.png)
 
 ## Setup
 
@@ -26,10 +26,10 @@ bash sft_7b.sh
 
 ## Main Result
 
-<img src="./image/image-20260204142459483.png" alt="image-20260204142459483" style="zoom:50%;" />
+![image-20260403172011735](D:\Document\Git\TraceSleuth\image\image-20260403172011735.png)
 
-<img src="./image/image-20260204142523139.png" alt="image-20260204142523139" style="zoom:50%;" />
+![image-20260403172051310](D:\Document\Git\TraceSleuth\image\image-20260403172051310.png)
 
-<img src="./image/image-20260204142549687.png" alt="image-20260204142549687" style="zoom:50%;" />
+![image-20260403172133027](D:\Document\Git\TraceSleuth\image\image-20260403172133027.png)
 
 <img src="./image/image-20260204142616389.png" alt="image-20260204142616389" style="zoom: 80%;" />
